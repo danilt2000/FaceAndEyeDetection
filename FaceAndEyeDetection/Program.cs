@@ -8,7 +8,7 @@ internal class Program
 	private static void Main(string[] args)
 	{
 		// načtení obrázku
-		Image<Bgr, byte> img = new Image<Bgr, byte>("C:\\test\\FadeEyeDetection\\TestFace4.jpg");
+		Image<Bgr, byte> img = new Image<Bgr, byte>("C:\\test\\FadeEyeDetection\\TestFace3.jpg");
 
 		// převod obrázku na grayscale
 		Image<Gray, byte> grayImg = img.Convert<Gray, byte>();
@@ -44,6 +44,6 @@ internal class Program
 			img.Draw(eye, new Bgr(Color.Red), 2);
 		}
 
-		img.Save("C:\\test\\FadeEyeDetection\\Vysledek4.jpg");
+		img.Save("C:\\test\\FadeEyeDetection\\Vysledek3.jpg");
 	}
 }
